@@ -234,7 +234,7 @@ end
 And back in our form partial:
 
 ```erb
-<!-- posts_form.html.erb -->
+<!-- posts/_form.html.erb -->
 
 <%= form_for(@post) do |f| %>
   <%= author_id_field(@post) %>
@@ -256,3 +256,5 @@ You're well on your way to becoming a nested resource ninja!
 ![Ninja Baby](http://i.giphy.com/ErdfMetILIMko.gif)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/modification-nested-routes-reading'>Modifying Nested Resources</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/modification-nested-routes-reading'>Modifying Nested Resources</a> on Learn.co and start learning to code for free.</p>
