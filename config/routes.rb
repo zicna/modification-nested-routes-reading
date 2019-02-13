@@ -1,10 +1,3 @@
 Rails.application.routes.draw do
-
-  resources :authors, only: [:show, :index] do
-    resources :posts, only: [:show, :index]
-  end
-
-  resources :posts, only: [:index, :show, :new, :create, :edit, :update]
-
-  root 'posts#index'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
