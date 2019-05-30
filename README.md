@@ -22,6 +22,7 @@ We already used nested resources to view posts by author, so now let's look at n
 resources :authors, only: [:show, :index] do
   resources :posts, only: [:show, :index, :new]
 end
+resources :posts
 ```
 
 This gives us access to `/authors/:id/posts/new`, and a `new_author_post_path` helper.
