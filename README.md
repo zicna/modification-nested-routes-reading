@@ -235,7 +235,7 @@ end
 And back in our form partial:
 
 ```erb
-<!-- posts_form.html.erb -->
+<!-- posts/_form.html.erb -->
 
 <%= form_for(@post) do |f| %>
   <%= author_id_field(@post) %>
