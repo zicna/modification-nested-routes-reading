@@ -256,5 +256,3 @@ You're well on your way to becoming a nested resource ninja!
 ![Ninja Baby](http://i.giphy.com/ErdfMetILIMko.gif)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/modification-nested-routes-reading'>Modifying Nested Resources</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/modification-nested-routes-reading'>Modifying Nested Resources</a> on Learn.co and start learning to code for free.</p>
