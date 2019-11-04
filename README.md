@@ -131,9 +131,19 @@ Now we need to update our post `show` view to give us the new nested link to edi
 <p><%= @post.description %> </p>
 ```
 
-And if we try it out, everything should work just fine. Reload the page, click the edit link, and edit the post.
+We need to make one small change to the controller:
 
-Pretty easy, right? We didn't even have to change the controller this time. What's the catch?
+```ruby
+def update
+  @post = Post.find(params[:id])
+  @post.update(params.require(:post))
+  redirect_to post_path(@post)
+end
+```
+
+Now if we try it out, everything should work just fine. Reload the page, click the edit link, and edit the post.
+
+Pretty easy, right? What's the catch?
 
 ### Handling Mischief And Errors In Our URLs
 
