@@ -12,7 +12,7 @@ Continuing with our blog application, we're going to extend our nested resources
 
 ### Creating A New Post For An Author
 
-The first thing we want to do is to create a new post that is automatically linked to an `Author`. We could set up a select box on the post page and make the author choose. However, if we're already on the author's page, we know who the author is, so why not do it without forcing the user to choose?
+The first thing we want to do is to create a new post that is automatically linked to an `Author`. We could set up a select box on the post page and make the user choose an author. However, if we're already on the author's new post page, we know who the author is, so why not do it without forcing the user to choose?
 
 We already used nested resources to view posts by author, so now let's look at nested resources to create posts by author. As usual, we want to start with the route. We want to add `:new` to our nested `:posts` resource:
 
@@ -25,7 +25,7 @@ end
 resources :posts
 ```
 
-This gives us access to `/authors/:id/posts/new`, and a `new_author_post_path` helper.
+This gives us access to `/authors/:author_id/posts/new`, and a `new_author_post_path` helper.
 
 **Top-tip:** Remember to run `rake routes` if you're unsure of the URL helper name.
 
