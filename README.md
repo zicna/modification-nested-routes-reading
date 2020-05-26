@@ -12,7 +12,7 @@ Continuing with our blog application, we're going to extend our nested resources
 
 ### Creating A New Post For An Author
 
-The first thing we want to do is to create a new post that is automatically linked to an `Author`. We could set up a select box on the post page and make the user choose an author. However, if we're already on the author's new post page, we know who the author is, so why not do it without forcing the user to choose?
+The first thing we want to do is create a new post that is automatically linked to an `Author`. We could set up a select box on the post page and make the user choose an author. However, if we're already on the author's new post page, we know who the author is, so why not do it without forcing the user to choose?
 
 We already used nested resources to view posts by author, so now let's look at nested resources to create posts by author. As usual, we want to start with the route. We want to add `:new` to our nested `:posts` resource:
 
