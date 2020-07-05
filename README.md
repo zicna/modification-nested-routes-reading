@@ -265,3 +265,4 @@ We've seen how to create and edit nested resources, handle for errors or mischie
 You're well on your way to becoming a nested resource ninja!
 
 ![Ninja Baby](http://i.giphy.com/ErdfMetILIMko.gif)
+
